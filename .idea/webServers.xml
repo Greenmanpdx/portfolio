@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="a720ed6b-5a2b-4e34-8052-3dc931fa1105" name="greenmanpdx" url="http://ftp.greenmanpdx.com">
+        <fileTransfer host="ftp.greenmanpdx.com" port="22" rootFolder="/home/greenman" accessType="SFTP">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" />
+          </advancedOptions>
+          <option name="port" value="22" />
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>

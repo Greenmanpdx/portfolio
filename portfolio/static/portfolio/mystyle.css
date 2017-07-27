@@ -1,0 +1,37 @@
+.profileImage {
+    width: 25em;
+    border: #000000 solid medium;
+}
+body {
+
+    background: url("images/bluelake.jpg") no-repeat fixed left top;
+    background-size: cover;
+}
+
+p {
+    font-family: "Roboto", "Lucida Grande", "DejaVu Sans", "Bitstream Vera Sans", Verdana, Arial, sans-serif;
+}
+
+article{
+    display: flex;
+}
+div.gallery{
+    margin: 5px;
+    border: 1px solid #ccc;
+    float: left;
+
+}
+
+div.gallery:hover{
+    border: 1px solid #777;
+}
+
+div.gallery img {
+    width: 100%;
+    height: auto;
+}
+
+div.desc{
+    padding: 15px;
+    text-align: center;
+}

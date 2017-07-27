@@ -1,0 +1,48 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Portfolio</title>
+    <link rel="stylesheet" type="text/css" href="{% static 'portfolio/mySass.css' %}">
+</head>
+<body>
+<div id ='top'>
+<h1>My Portfolio</h1>
+    <div class='head'>
+        <div><img class="profileImage" src="{% static 'portfolio/images/jason.jpg' %}"></div>
+        <div class='description'>
+            <p>I am a software developer from Portland, OR. I have experience with c++, Java, Python, HTML, CSS, SASS and Django </p>
+
+        </div>
+
+    </div>
+    <div>
+        <ul id="links">
+                    <li><a href="https://github.com/GreenmanPDX" target="_blank">My Github</a></li>
+                    <li><a href="https://www.linkedin.com/in/jason-lingel/" target="_blank">My Linkedin</a></li>
+                    <li><a href="https://codepen.io/GreenmanPDX/" target="_blank">My Codepen</a></li>
+        </ul>
+    </div>
+</div>
+<article>
+        <h1>Class Projects</h1>
+        <hr style="width: 30%">
+        <ul class="grid cs-style-2">
+        {% for p in projects %}
+        <li>
+            <figure>
+                <img src="{{ p.image.url }}" alt="{{ p.name }}" width="300" height="200">
+                <figcaption>
+                    <div class="desc">{{ p.description }}</div>
+                    <a target="_blank" href="{{ p.link }}">Take a look</a>
+                </figcaption>
+            </figure>
+        </li>
+        {% endfor %}
+
+    </ul>
+
+</article>
+</body>
+</html>
