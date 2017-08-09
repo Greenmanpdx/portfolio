@@ -8,3 +8,8 @@ def index(request):
         'projects': projects
     }
     return render(request, 'portfolio/index.html', context_dict)
+
+def wackAnAlien(request):
+
+
+    return render(request, 'portfolio/wackAnAlien.html')

@@ -21,5 +21,11 @@ from django.conf.urls.static import static
 
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
-    url(r'^$', page_views.index, name='index')
+    url(r'^$', page_views.index, name='index'),
+    url(r'^wackAnAlien', page_views.wackAnAlien, name='wackAnAlien'),
+    # url(r'^weather', page_views.weather, name='weather'),
+    # url(r'^earthquake', page_views.earthquake, name='earthquake'),
+    # url(r'^angryDice', page_views.angryDice, name='angryDice'),
+    # url(r'^burrito', page_views.burrito, name='burrito'),
+
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

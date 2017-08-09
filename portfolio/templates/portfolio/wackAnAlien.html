@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Whack an alien</title>
+    <link rel="stylesheet" href="moleCss.css">
+
+</head>
+<body>
+<h1>Whack an Alien</h1>
+<div id="gameField">
+    <div id="scoreField">
+        <div id="scoreLabel">Score</div>
+        <div id="playerScore"></div>
+    </div>
+    <div id="gameOver"></div>
+    <div id="playField">
+        <div id="row1" class="row">
+            <div id="1" class="hole"></div><div id="2" class="hole"></div><div id="3" class="hole"></div><div id="4" class="hole"></div></div>
+        <div id="row2" class="row">
+            <div id="5" class="hole"></div><div id="6" class="hole"></div><div id="7" class="hole"></div><div id="8" class="hole"></div></div>
+        <div id="row3" class="row">
+            <div id="9" class="hole"></div><div id="10" class="hole"></div><div id="11" class="hole"></div><div id="12" class="hole"></div></div>
+        <div id="row4" class="row">
+            <div id="13" class="hole"></div><div id="14" class="hole"></div><div id="15" class="hole"></div><div id="16" class="hole"></div></div>
+        <div id="row5" class="row">
+            <div id="17" class="hole"></div><div id="18" class="hole"></div><div id="19" class="hole"></div><div id="20" class="hole"></div></div>
+    </div>
+    <div id="highScores">
+        <div id="highLabel">High Scores</div>
+        <div id="scores"><ol id="scoreList"></ol></div>
+    </div>
+</div>
+    <div id="gameControl">
+        <button id="start">Start</button>
+        <button id="stop">Stop</button>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="moleScript.js"></script>
+
+</body>
+</html>
