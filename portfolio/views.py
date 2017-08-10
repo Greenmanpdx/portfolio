@@ -9,7 +9,7 @@ def index(request):
     }
     return render(request, 'portfolio/index.html', context_dict)
 
-def wackAnAlien(request):
+def whackAnAlien(request):
 
 
     return render(request, 'portfolio/whackAnAlien/whackAnAlien.html')

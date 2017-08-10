@@ -22,7 +22,7 @@ from django.conf.urls.static import static
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
     url(r'^$', page_views.index, name='index'),
-    url(r'^whackAnAlien', page_views.wackAnAlien, name='wackAnAlien'),
+    url(r'^whackAnAlien', page_views.whackAnAlien, name='whackAnAlien'),
     url(r'^weather', page_views.weather, name='weather'),
     url(r'^earthquake', page_views.earthquake, name='earthquake'),
     url(r'^angryDice', page_views.angryDice, name='angryDice'),
