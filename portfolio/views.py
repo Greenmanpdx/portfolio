@@ -12,4 +12,29 @@ def index(request):
 def wackAnAlien(request):
 
 
-    return render(request, 'portfolio/wackAnAlien.html')
+    return render(request, 'portfolio/whackAnAlien/whackAnAlien.html')
+
+
+def weather(request):
+
+    return render(request, 'portfolio/weather/index.html')
+
+
+def earthquake(request):
+
+    return render(request, 'portfolio/earthquake/index.html')
+
+
+def angryDice(request):
+
+    return render(request, 'portfolio/angryDice/angry_dice_jquery.html')
+
+
+def burrito(request):
+
+    return render(request, 'portfolio/Burrito/index.html')
+
+
+def thanks(request):
+
+    return render(request, 'portfolio/Burrito/thanks.html')

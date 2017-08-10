@@ -1,9 +1,11 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <title>Whack an alien</title>
-    <link rel="stylesheet" href="moleCss.css">
+
+    <link rel="stylesheet" type="text/css" href="{% static 'portfolio/whackAnAlien/moleCss.css' %}">
 
 </head>
 <body>
@@ -36,7 +38,7 @@
         <button id="stop">Stop</button>
     </div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script src="moleScript.js"></script>
+    <script src="/static/portfolio/whackAnAlien/moleScript.js"></script>
 
 </body>
 </html>

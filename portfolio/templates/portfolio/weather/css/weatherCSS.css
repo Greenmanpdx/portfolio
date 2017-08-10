@@ -1,0 +1,11 @@
+.temperature{
+    display: flex;
+    flex-direction: column;
+}
+.celcius{
+    display: flex;
+}
+
+.faren{
+    display: flex;
+}
