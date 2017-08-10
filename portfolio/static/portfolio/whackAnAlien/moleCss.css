@@ -1,0 +1,100 @@
+#playField{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #29c735;
+    height: 76vh;
+    width: 61vh;
+    margin-right: auto;
+    margin-left: auto;
+
+}
+body{
+    background-color: rebeccapurple;
+}
+.row{
+    display: flex;
+    flex-direction: row;
+}
+
+img {
+    height: 15vh;
+    width: 15vh;
+}
+
+#gameControl{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+button{
+    font-size: 3em;
+    margin: 1em;
+}
+
+.hole{
+    border: 1px dotted;
+    height: 15vh;
+    width: 15vh;
+}
+
+h1{
+    width: 100%;
+    text-align: center;
+}
+
+#gameField{
+    display: flex;
+    flex-direction: row;
+    margin: 0;
+}
+
+#scoreField{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    /*border: 1px solid black;*/
+    width: 25%;
+    margin: 0;
+}
+
+#scoreLabel{
+    text-align: center;
+    font-size: 3em;
+}
+
+#highScores{
+    width: 25%;
+    /*border: 1px solid;*/
+}
+
+#highLabel{
+    text-align: center;
+    font-size: 3em;
+}
+
+#playerScore{
+    font-size: 2.5em;
+}
+
+#scoreList{
+    font-size: 2.5em;
+
+}
+#gameOver{
+    position: absolute;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+#gameOver img{
+    position: absolute;
+
+    z-index: 1000;
+    height: 45vh;
+    width: 58vh;
+}

@@ -1,0 +1,10 @@
+.mainImg {
+    float: left;
+    max-width: 300px;
+    border-radius: 50%;
+}
+
+#mainBoldText {
+    color: #ff0000;
+    font-weight: bold;
+}

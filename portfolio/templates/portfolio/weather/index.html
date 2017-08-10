@@ -1,0 +1,31 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+
+    <link rel="stylesheet" type="text/css" href="{% static 'portfolio/css/weatherCSS.css' %}">
+</head>
+<body class="stuff">
+<h1>Weather App</h1>
+<input type="text" id="zipcode" value="zipcode">
+
+
+<button class="target" >Submit</button>
+<h4>Temperature</h4>
+<div class="temperature">
+    <div class="celcius">
+        <h4 id="celcius"></h4>
+        <h4>&nbsp;Celcius</h4>
+    </div>
+    <div class="faren">
+        <h4 id="faren"></h4>
+        <h4>Fahrenheit</h4>
+    </div>
+</div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="/static/portfolio/weather/js/weatherScript.js"></script>
+</body>
+</html>
