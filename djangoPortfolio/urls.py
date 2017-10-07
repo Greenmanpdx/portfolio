@@ -28,6 +28,8 @@ urlpatterns = [
     url(r'^angryDice', page_views.angryDice, name='angryDice'),
     url(r'^burrito', page_views.burrito, name='burrito'),
     url(r'^thanks', page_views.thanks, name='thanks'),
+    url(r'^waAhighScores', page_views.waAhighScores, name='waAhighScores'),
+    url(r'^enterName', page_views.enterName, name='enterName'),
 
 
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

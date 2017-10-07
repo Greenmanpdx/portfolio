@@ -1,5 +1,6 @@
 from django.shortcuts import render
-from .models import Project
+from .models import Project, WaAhighScores
+from django.http import JsonResponse
 # Create your views here.
 def index(request):
     projects = Project.objects.all()
@@ -13,6 +14,13 @@ def whackAnAlien(request):
 
 
     return render(request, 'portfolio/whackAnAlien/whackAnAlien.html')
+
+def waAhighScores(request)
+    if request.method == 'POST':
+        scores = WaAhighScores.objects.get(pk=request.POST.get('pk'))
+
+
+    return JsonResponse({})
 
 
 def weather(request):
